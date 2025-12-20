@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles - Light Theme */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans bg-white text-gray-800 antialiased overflow-x-hidden;
+    line-height: 1.6;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .glass-card {
+    @apply bg-white border border-gray-100 rounded-xl shadow-card transition-all duration-300 ease-out;
+  }
+
+  .glass-card:hover {
+    @apply border-primary-200 -translate-y-1;
+    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.1);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium rounded-full bg-gradient-primary text-white shadow-lg transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 40px rgba(14, 165, 233, 0.3);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium rounded-full bg-white text-gray-700 border-2 border-gray-200 transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply border-primary-400 text-primary-600 bg-primary-50;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
