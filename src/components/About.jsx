@@ -26,7 +26,7 @@ function About() {
                             Full Stack Software Engineer
                         </h3>
                         <p className="text-gray-600 text-lg mb-4 leading-relaxed">
-                            Backend-focused Software Engineer with 4 years of experience building, maintaining, and
+                            with 4 years of experience building, maintaining, and
                             scaling production web applications. Strong background in the Node.js ecosystem (NestJS, Express, TypeScript),
                             with solid experience in MongoDB, MySQL, and AWS services.
                         </p>
@@ -39,7 +39,7 @@ function About() {
                         {/* Stats */}
                         <div className="grid grid-cols-3 gap-4">
                             <div className="glass-card p-6 text-center">
-                                <span className="block text-3xl md:text-4xl font-bold text-gradient mb-2">4+</span>
+                                <span className="block text-3xl md:text-4xl font-bold text-gradient mb-2">4</span>
                                 <span className="text-gray-500 text-sm">Years Experience</span>
                             </div>
                             <div className="glass-card p-6 text-center">
