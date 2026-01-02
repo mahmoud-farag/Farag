@@ -41,7 +41,7 @@ const experiences = [
 
 function Experience() {
     return (
-        <section className="py-24 bg-gray-50" id="experience">
+        <section className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors duration-300" id="experience">
             <div className="container mx-auto px-6">
                 <h2 className="section-title">Professional Experience</h2>
 
@@ -53,29 +53,29 @@ function Experience() {
                             style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
                         >
                             {/* Timeline line */}
-                            <div className="absolute left-0 top-2 bottom-0 w-px bg-gradient-to-b from-primary-500 to-primary-100"></div>
+                            <div className="absolute left-0 top-2 bottom-0 w-px bg-gradient-to-b from-primary-500 to-primary-100 dark:to-primary-800"></div>
 
                             {/* Timeline dot */}
-                            <div className="absolute left-0 top-2 w-3 h-3 -translate-x-1/2 rounded-full bg-primary-500 ring-4 ring-primary-100"></div>
+                            <div className="absolute left-0 top-2 w-3 h-3 -translate-x-1/2 rounded-full bg-primary-500 ring-4 ring-primary-100 dark:ring-primary-900"></div>
 
                             <div className="glass-card p-6 md:p-8 ml-4">
                                 <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                                     <div>
-                                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900">{exp.title}</h3>
-                                        <p className="text-primary-600 font-medium">{exp.company}</p>
-                                        <p className="text-gray-500 text-sm">{exp.location}</p>
+                                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">{exp.title}</h3>
+                                        <p className="text-primary-600 dark:text-primary-400 font-medium">{exp.company}</p>
+                                        <p className="text-gray-500 dark:text-gray-400 text-sm">{exp.location}</p>
                                     </div>
                                     <div className="text-right">
-                                        <span className="inline-block px-3 py-1 text-xs font-medium bg-primary-50 text-primary-600 rounded-full mb-2">
+                                        <span className="inline-block px-3 py-1 text-xs font-medium bg-primary-50 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400 rounded-full mb-2">
                                             {exp.type}
                                         </span>
-                                        <p className="text-gray-500 text-sm">{exp.period}</p>
+                                        <p className="text-gray-500 dark:text-gray-400 text-sm">{exp.period}</p>
                                     </div>
                                 </div>
 
                                 <ul className="space-y-2">
                                     {exp.responsibilities.map((item, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-gray-600">
+                                        <li key={i} className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
                                             <svg className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                             </svg>
@@ -90,11 +90,11 @@ function Experience() {
 
                 {/* Education */}
                 <div className="max-w-4xl mx-auto mt-16">
-                    <h3 className="text-2xl font-semibold text-gray-800 text-center mb-8">Education</h3>
+                    <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 text-center mb-8">Education</h3>
                     <div className="glass-card p-6 md:p-8 text-center">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-2">Bachelor of Computer Science</h4>
-                        <p className="text-primary-600 font-medium">Menoufia University</p>
-                        <p className="text-gray-500">2015 - 2020</p>
+                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Bachelor of Computer Science</h4>
+                        <p className="text-primary-600 dark:text-primary-400 font-medium">Menoufia University</p>
+                        <p className="text-gray-500 dark:text-gray-400">2015 - 2020</p>
                     </div>
                 </div>
             </div>
@@ -103,3 +103,4 @@ function Experience() {
 }
 
 export default Experience;
+
