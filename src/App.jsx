@@ -44,7 +44,7 @@ function App() {
       <footer className="py-8 bg-white border-t border-gray-100">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500">© 2024 Mahmoud Farag. All rights reserved.</p>
+            <p className="text-gray-500">© 2025 Mahmoud Farag. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <a href="https://github.com/mahmoud-farag" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary-600 transition-colors">
                 GitHub

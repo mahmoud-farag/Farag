@@ -26,14 +26,14 @@ function About() {
                             Full Stack Software Engineer
                         </h3>
                         <p className="text-gray-600 text-lg mb-4 leading-relaxed">
-                            With 4+ years of experience designing and deploying scalable, secure web applications.
-                            I'm highly proficient in the Node.js ecosystem (ExpressJS, NestJS, ReactJS, Angular, TypeScript),
-                            complemented by strong database skills (MongoDB, MySQL) and AWS familiarity.
+                            Backend-focused Software Engineer with 4 years of experience building, maintaining, and
+                            scaling production web applications. Strong background in the Node.js ecosystem (NestJS, Express, TypeScript),
+                            with solid experience in MongoDB, MySQL, and AWS services.
                         </p>
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                            I have proven success in optimizing system performance, refactoring legacy codebases,
-                            and designing robust APIs for clean, maintainable systems. Versatile with full-stack
-                            development experience in both Angular and ReactJS.
+                            I've worked extensively on real-world systems including payroll platforms, focusing on
+                            performance, maintainability, and clean architecture. Comfortable working across the full stack
+                            when needed, with hands-on experience using Angular and React to deliver complete features end-to-end.
                         </p>
 
                         {/* Stats */}

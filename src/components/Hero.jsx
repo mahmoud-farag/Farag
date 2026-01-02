@@ -22,9 +22,9 @@ function Hero() {
               <span className="text-gradient">Full Stack Software Engineer</span>
             </h2>
             <p className="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
-              4+ years crafting scalable, secure web applications. Expert in Node.js ecosystem
-              (ExpressJS, NestJS, ReactJS, Angular, TypeScript) with strong database skills and AWS familiarity.
-              Passionate about clean code and maintainable systems.
+              With 4 years of experience building, maintaining, and
+              scaling production web applications. Strong background in the Node.js ecosystem (NestJS, Express, TypeScript)
+              with solid experience in MongoDB, MySQL, and AWS services. Passionate about clean architecture and maintainable systems.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
               {/* <a href="#projects" className="btn-primary group">
@@ -34,7 +34,7 @@ function Hero() {
                 </svg>
               </a> */}
               <a
-                href="https://drive.google.com/file/d/17pa3TKsd318addZs_vyjwSjoXl2_VCFG/view"
+                href="https://drive.google.com/file/d/1JGXl_PX0XxCntmTYx47XNnhGytGU_xNS/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"

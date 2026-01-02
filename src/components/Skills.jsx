@@ -1,18 +1,18 @@
 const skills = [
     { name: 'Node.js', category: 'Backend', level: 95 },
-    { name: 'ExpressJS', category: 'Backend', level: 95 },
-    { name: 'NestJS', category: 'Backend', level: 70 },
-    { name: 'TypeScript', category: 'Language', level: 70 },
-    { name: 'MongoDB', category: 'Database', level: 95 },
-    { name: 'MySQL', category: 'Database', level: 75 },
-    { name: 'ReactJS', category: 'Frontend', level: 70 },
+    { name: 'Express.js', category: 'Backend', level: 95 },
+    { name: 'NestJS', category: 'Backend', level: 75 },
+    { name: 'RESTful APIs', category: 'Backend', level: 90 },
+    { name: 'MongoDB', category: 'Database', level: 90 },
+    { name: 'MySQL', category: 'Database', level: 80 },
+    { name: 'PostgreSQL', category: 'Database', level: 70 },
     { name: 'Angular', category: 'Frontend', level: 80 },
-    { name: 'AWS', category: 'Cloud', level: 65 },
-    { name: 'Docker', category: 'Cloud', level: 60 },
-
+    { name: 'React.js', category: 'Frontend', level: 70 },
+    { name: 'TypeScript', category: 'Language', level: 75 },
+    { name: 'AWS', category: 'Cloud', level: 70 },
 ];
 
-const extraSkills = ['Git', 'GitHub', 'REST APIs', 'Microservices', 'PostgreSQL', 'Redis', 'Jest', 'Agile'];
+const extraSkills = ['Mongoose', 'Prisma', 'Sequelize', 'Lambda', 'S3', 'SQS', 'Fargate', 'CloudWatch', 'Jenkins', 'Git', 'GitHub', 'Tailwind CSS', 'Bootstrap', 'Agile', 'Scrum', 'CI/CD', 'Microservices'];
 
 function Skills() {
     return (

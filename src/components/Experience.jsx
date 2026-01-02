@@ -6,11 +6,12 @@ const experiences = [
         period: 'Dec 2022 - Present',
         type: 'Full-time',
         responsibilities: [
-            'Fixing bugs and improving system stability across core payroll features',
-            'Refactoring and optimizing legacy codebases for better maintainability and scalability',
-            'Applying best engineering practices to ensure robustness and performance in production',
-            'Involved in architectural transition to microservices on AWS Serverless',
-            'Developing and enhancing reports to meet new business requirements',
+            'Contributed to the development and stabilization of a large-scale payroll system used in production, working across the full stack with a strong backend focus using Node.js, RESTful APIs, MongoDB, and Angular',
+            'Refactored and optimized legacy backend codebases to improve readability, maintainability, and reduce bug recurrence across core payroll features',
+            'Designed, implemented, and enhanced RESTful APIs to support new business requirements, ensuring data consistency and clean integration between backend services and frontend applications',
+            'Actively participated in developing and maintaining Angular-based UI features, implementing new screens, improving existing components, and collaborating closely with backend logic to deliver complete end-to-end functionality',
+            'Took part in the early stages of transitioning parts of the system toward a microservices-oriented architecture on AWS (Lambda, S3, Fargate, SQS), gaining hands-on experience with real-world scalability, deployment, and architectural challenges',
+            'Improved overall system reliability and user experience by debugging production issues across both backend and frontend layers, and collaborating closely with cross-functional teams including product and QA',
         ],
     },
     {
@@ -20,9 +21,9 @@ const experiences = [
         period: 'Jun 2022 - Dec 2022',
         type: 'Part-time',
         responsibilities: [
-            'Developed robust, secure, and well-documented APIs using ExpressJS and MySQL',
-            'Worked with clients to understand requirements and deliver quality solutions',
-            'Implemented best practices for API security and performance',
+            'Developed secure and well-documented REST APIs using Express.js and MySQL for multiple client projects',
+            'Implemented authentication, validation, and error-handling patterns to ensure API reliability and maintainability',
+            'Worked independently with clients to translate business requirements into backend solutions',
         ],
     },
     {
@@ -32,9 +33,8 @@ const experiences = [
         period: 'Sep 2022 - Oct 2022',
         type: 'Part-time',
         responsibilities: [
-            'Built a jewelry e-commerce application with a talented team',
-            'Responsible for building and integrating new pages and UI components',
-            'Collaborated closely with backend team to connect frontend features with API endpoints',
+            'Built and integrated UI components for a React-based e-commerce application, collaborating with backend developers to connect frontend features with API endpoints',
+            'Focused on delivering responsive, user-friendly interfaces while maintaining clean and reusable component structures',
         ],
     },
 ];
