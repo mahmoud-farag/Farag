@@ -37,14 +37,14 @@ function About() {
                         </p>
 
                         {/* Stats */}
-                        <div className="grid grid-cols-3 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div className="glass-card p-6 text-center">
-                                <span className="block text-3xl md:text-4xl font-bold text-gradient mb-2">4</span>
-                                <span className="text-gray-500 dark:text-gray-400 text-sm">Years Experience</span>
+                                <span className="block text-3xl md:text-4xl font-bold text-gradient mb-2">4 </span>
+                                <span className="text-gray-500 dark:text-gray-400 text-">Years of Experience</span>
                             </div>
                             <div className="glass-card p-6 text-center">
                                 <span className="block text-3xl md:text-4xl font-bold text-gradient mb-2">3</span>
-                                <span className="text-gray-500 dark:text-gray-400 text-sm">Companies</span>
+                                <span className="text-gray-500 dark:text-gray-400 text-sm ">Companies</span>
                             </div>
                             <div className="glass-card p-6 text-center">
                                 <span className="block text-3xl md:text-4xl font-bold text-gradient mb-2">10+</span>

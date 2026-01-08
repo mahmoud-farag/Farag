@@ -1,3 +1,5 @@
+import { ChevronDown } from 'lucide-react';
+
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-primary-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300" id="home">
@@ -63,11 +65,9 @@ function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400 dark:text-gray-500 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
-        <span className="text-sm font-medium">Scroll</span>
-        <svg className="w-6 h-6 animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M12 5v14M19 12l-7 7-7-7" />
-        </svg>
+      <a href="#about" className="absolute bottom-5 sm:bottom-6 md:bottom-0  left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400 dark:text-gray-500 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+        <span className="text-sm sm:text-2xl font-medium">Scroll</span>
+        <ChevronDown className="size-6 sm:size-8 md:size-10 animate-bounce" />
       </a>
     </section>
   );

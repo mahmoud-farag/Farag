@@ -1,3 +1,5 @@
+import { Check } from 'lucide-react';
+
 const experiences = [
     {
         title: 'Software Engineer',
@@ -49,11 +51,11 @@ function Experience() {
                     {experiences.map((exp, index) => (
                         <div
                             key={index}
-                            className="relative pl-8 pb-12 last:pb-0 animate-fade-in-up opacity-0"
+                            className="relative sm:pl-8 pb-12 last:pb-0 animate-fade-in-up opacity-0"
                             style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
                         >
                             {/* Timeline line */}
-                            <div className="absolute left-0 top-2 bottom-0 w-px bg-gradient-to-b from-primary-500 to-primary-100 dark:to-primary-800"></div>
+                            <div className="absolute left-0 top-2 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-primary-100 dark:to-primary-800"></div>
 
                             {/* Timeline dot */}
                             <div className="absolute left-0 top-2 w-3 h-3 -translate-x-1/2 rounded-full bg-primary-500 ring-4 ring-primary-100 dark:ring-primary-900"></div>
