@@ -32,8 +32,11 @@ function About() {
                         </p>
                         <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
                             I've worked extensively on real-world systems including payroll platforms, focusing on
-                            performance, maintainability, and clean architecture. Comfortable working across the full stack
                             when needed, with hands-on experience using Angular and React to deliver complete features end-to-end.
+                        </p>
+                        <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
+                            Currently open to Backend or Backend-leaning Full Stack roles where I can contribute to building reliable, scalable
+                            systems and continue growing as an engineer.
                         </p>
 
                         {/* Stats */}

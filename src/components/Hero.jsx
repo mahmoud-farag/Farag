@@ -29,14 +29,14 @@ function Hero() {
               with solid experience in MongoDB, MySQL, and AWS services. Passionate about clean architecture and maintainable systems.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 animate-fade-in-up opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-              {/* <a href="#projects" className="btn-primary group">
+              <a href="#projects" className="btn-primary group">
                 <span>View Projects</span>
                 <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </a> */}
+              </a>
               <a
-                href="https://drive.google.com/file/d/1JGXl_PX0XxCntmTYx47XNnhGytGU_xNS/view"
+                href="https://drive.google.com/file/d/1Z5VhOZB34NXTKS9HL0hFqJ2_DhDeA1wp/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"

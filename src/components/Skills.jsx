@@ -12,7 +12,7 @@ const skills = [
     { name: 'AWS', category: 'Cloud', level: 70 },
 ];
 
-const extraSkills = ['Mongoose', 'Prisma', 'Sequelize', 'Lambda', 'S3', 'SQS', 'Fargate', 'CloudWatch', 'Jenkins', 'Git', 'GitHub', 'Tailwind CSS', 'Bootstrap', 'Agile', 'Scrum', 'CI/CD', 'Microservices'];
+const extraSkills = ['Mongoose', 'Prisma', 'Sequelize', 'Lambda', 'S3', 'SQS', 'Fargate', 'CloudWatch', 'AWS CDK', 'Docker', 'Kubernetes', 'Jenkins', 'Git', 'GitHub Actions', 'Tailwind CSS', 'Bootstrap', 'Agile', 'Scrum', 'TDD', 'CI/CD', 'Microservices', 'Performance Optimisation'];
 
 function Skills() {
     return (

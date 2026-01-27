@@ -8,8 +8,8 @@ const experiences = [
         period: 'Dec 2022 - Present',
         type: 'Full-time',
         responsibilities: [
-            'Contributed to the development and stabilization of a large-scale payroll system used in production, working across the full stack with a strong backend focus using Node.js, RESTful APIs, MongoDB, and Angular',
-            'Refactored and optimized legacy backend codebases to improve readability, maintainability, and reduce bug recurrence across core payroll features',
+            'Contributed to the development and stabilisation of a large-scale payroll system used in production, working across the full stack with a strong backend focus using Node.js, RESTful APIs, MongoDB, and Angular',
+            'Refactored and optimised legacy backend codebases to improve readability, maintainability, and reduce bug recurrence across core payroll features',
             'Designed, implemented, and enhanced RESTful APIs to support new business requirements, ensuring data consistency and clean integration between backend services and frontend applications',
             'Actively participated in developing and maintaining Angular-based UI features, implementing new screens, improving existing components, and collaborating closely with backend logic to deliver complete end-to-end functionality',
             'Took part in the early stages of transitioning parts of the system toward a microservices-oriented architecture on AWS (Lambda, S3, Fargate, SQS), gaining hands-on experience with real-world scalability, deployment, and architectural challenges',

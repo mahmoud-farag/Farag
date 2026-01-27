@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { useTheme } from './context/ThemeContext';
 
@@ -31,6 +32,7 @@ function App() {
             <ul className="hidden md:flex items-center gap-8">
               <li><a href="#home" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">Home</a></li>
               <li><a href="#about" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">About</a></li>
+              <li><a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">Projects</a></li>
               <li><a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">Skills</a></li>
               <li><a href="#experience" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">Experience</a></li>
               <li><a href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">Contact</a></li>
@@ -92,6 +94,15 @@ function App() {
               </li>
               <li>
                 <a
+                  href="#projects"
+                  onClick={closeMobileMenu}
+                  className="block text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium py-2"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
                   href="#skills"
                   onClick={closeMobileMenu}
                   className="block text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium py-2"
@@ -126,6 +137,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Projects />
         <Skills />
         <Experience />
         <Contact />
