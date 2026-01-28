@@ -36,7 +36,7 @@ function Hero() {
                 </svg>
               </a>
               <a
-                href="https://drive.google.com/file/d/1Z5VhOZB34NXTKS9HL0hFqJ2_DhDeA1wp/view"
+                href="https://drive.google.com/file/d/1Z5VhOZB34NXTKS9HL0hFqJ2_DhDeA1wp/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
