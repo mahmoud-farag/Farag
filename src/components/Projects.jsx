@@ -6,13 +6,24 @@ const projects = [
         title: 'MindMesh',
         description: 'A comprehensive full-stack application leveraging modern technologies.',
         longDescription: 'An AI-powered RAG mini system that helps students learn more effectively through document analysis, flashcard generation, quiz creation, and intelligent chat interactions.',
-        tech: ['React', 'Node.js', 'MongoDB', 'AWS'], // Inferring stack from skills
+        tech: ['React', 'Node.js', 'MongoDB', 'AWS'],
         links: [
             { label: 'Frontend', url: 'https://github.com/mahmoud-farag/mindMesh-FE' },
             { label: 'Backend', url: 'https://github.com/mahmoud-farag/mindMesh-BE' }
         ],
         gradient: 'from-primary-400 to-secondary-400',
         image: '/project-mindmesh.png'
+    },
+    {
+        title: 'Task Flow',
+        description: 'A simple Task Manager application built with React Native (Expo).',
+        longDescription: 'My first React Native project featuring task list management, filtering by priority (High, Medium, Low), swipe actions for deletion, and a beautiful UI inspired by modern Dribbble designs. Includes interactive bottom sheets and smooth gradient aesthetics.',
+        tech: ['React Native', 'Expo', 'TypeScript', 'NativeWind'],
+        links: [
+            { label: 'Repository', url: 'https://github.com/mahmoud-farag/TaskManagerRN' }
+        ],
+        gradient: 'from-pink-400 to-rose-300',
+        image: '/project-taskflow.png'
     }
 ];
 
