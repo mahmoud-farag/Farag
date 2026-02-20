@@ -48,7 +48,7 @@ function Hero() {
             >
               With 4 years of experience building, maintaining, and scaling production web applications.
               Strong background in the Node.js ecosystem (NestJS, Express, TypeScript) with solid
-              experience in MongoDB, MySQL, and AWS services. Passionate about clean architecture
+              experience in MongoDB, PostgresSQL, MySQL, and AWS services. Passionate about clean architecture
               and maintainable systems.
             </p>
 
