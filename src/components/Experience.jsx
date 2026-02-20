@@ -1,5 +1,3 @@
-import { Check } from 'lucide-react';
-
 const experiences = [
     {
         title: 'Software Engineer',
@@ -43,60 +41,80 @@ const experiences = [
 
 function Experience() {
     return (
-        <section className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors duration-300" id="experience">
+        <section className="py-24 bg-base-200 transition-colors duration-300" id="experience">
             <div className="container mx-auto px-6">
                 <h2 className="section-title">Professional Experience</h2>
 
+                {/* DaisyUI vertical timeline */}
                 <div className="max-w-4xl mx-auto">
-                    {experiences.map((exp, index) => (
-                        <div
-                            key={index}
-                            className="relative sm:pl-8 pb-12 last:pb-0 animate-fade-in-up opacity-0"
-                            style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
-                        >
-                            {/* Timeline line */}
-                            <div className="absolute left-0 top-2 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-primary-100 dark:to-primary-800"></div>
+                    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                        {experiences.map((exp, index) => (
+                            <li key={index}>
+                                {index > 0 && <hr className="bg-primary/30" />}
 
-                            {/* Timeline dot */}
-                            <div className="absolute left-0 top-2 w-3 h-3 -translate-x-1/2 rounded-full bg-primary-500 ring-4 ring-primary-100 dark:ring-primary-900"></div>
-
-                            <div className="glass-card p-6 md:p-8 ml-4">
-                                <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
-                                    <div>
-                                        <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">{exp.title}</h3>
-                                        <p className="text-primary-600 dark:text-primary-400 font-medium">{exp.company}</p>
-                                        <p className="text-gray-500 dark:text-gray-400 text-sm">{exp.location}</p>
-                                    </div>
-                                    <div className="text-right">
-                                        <span className="inline-block px-3 py-1 text-xs font-medium bg-primary-50 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400 rounded-full mb-2">
-                                            {exp.type}
-                                        </span>
-                                        <p className="text-gray-500 dark:text-gray-400 text-sm">{exp.period}</p>
+                                {/* Timeline icon */}
+                                <div className="timeline-middle">
+                                    <div className="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 flex items-center justify-center">
                                     </div>
                                 </div>
 
-                                <ul className="space-y-2">
-                                    {exp.responsibilities.map((item, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
-                                            <svg className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                            </svg>
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    ))}
+                                <div className={`${index % 2 === 0 ? 'timeline-end' : 'timeline-start md:text-end'} mb-10 animate-fade-in-up opacity-0`}
+                                    style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
+                                >
+                                    {/* Date on top */}
+                                    <time className="text-xs text-base-content/50 font-mono mb-1 block">{exp.period}</time>
+
+                                    {/* Card */}
+                                    <div className="card bg-base-100 border border-base-300 shadow-card hover:-translate-y-1 hover:border-primary/30 transition-all duration-300">
+                                        <div className="card-body p-6">
+                                            {/* Header */}
+                                            <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+                                                <div>
+                                                    <h3 className="card-title text-base-content text-xl">{exp.title}</h3>
+                                                    <p className="text-primary font-semibold text-sm">{exp.company}</p>
+                                                    <p className="text-base-content/50 text-xs">{exp.location}</p>
+                                                </div>
+                                                <span className={`badge ${exp.type === 'Full-time' ? 'badge-primary' : 'badge-secondary'} badge-outline`}>
+                                                    {exp.type}
+                                                </span>
+                                            </div>
+
+                                            {/* Responsibilities */}
+                                            <ul className="space-y-2 mt-2">
+                                                {exp.responsibilities.map((item, i) => (
+                                                    <li key={i} className="flex items-start gap-3 text-base-content/70 text-sm">
+                                                        <svg className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                                        </svg>
+                                                        <span>{item}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {index < experiences.length - 1 && <hr className="bg-primary/30" />}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
                 {/* Education */}
                 <div className="max-w-4xl mx-auto mt-16">
-                    <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 text-center mb-8">Education</h3>
-                    <div className="glass-card p-6 md:p-8 text-center">
-                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Bachelor of Computer Science</h4>
-                        <p className="text-primary-600 dark:text-primary-400 font-medium">Menoufia University</p>
-                        <p className="text-gray-500 dark:text-gray-400">2015 - 2020</p>
+                    <h3 className="text-2xl font-semibold text-base-content text-center mb-8">Education</h3>
+                    <div className="card bg-base-100 border border-base-300 shadow-card text-center">
+                        <div className="card-body p-8 items-center">
+                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-3">
+                                <svg className="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                </svg>
+                            </div>
+                            <h4 className="card-title text-base-content text-xl">Bachelor of Computer Science</h4>
+                            <p className="text-primary font-semibold">Menoufia University</p>
+                            <div className="badge badge-ghost mt-2">2015 – 2020</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,4 +123,3 @@ function Experience() {
 }
 
 export default Experience;
-

@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from 'daisyui';
+
 export default {
-    darkMode: 'class',
+    darkMode: ['class', '[data-theme="dark"]'],
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
@@ -8,14 +10,13 @@ export default {
     theme: {
         extend: {
             colors: {
-                // Clean white/light color palette
                 primary: {
                     50: '#f0f9ff',
                     100: '#e0f2fe',
                     200: '#bae6fd',
                     300: '#7dd3fc',
                     400: '#38bdf8',
-                    500: '#0ea5e9',  // Sky blue accent
+                    500: '#0ea5e9',
                     600: '#0284c7',
                     700: '#0369a1',
                     800: '#075985',
@@ -34,7 +35,6 @@ export default {
                     500: '#10b981',
                     600: '#059669',
                 },
-                // Light theme colors
                 light: {
                     50: '#ffffff',
                     100: '#fafafa',
@@ -80,5 +80,48 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [daisyui],
+    daisyui: {
+        themes: [
+            {
+                light: {
+                    "primary": "#0ea5e9",
+                    "primary-content": "#ffffff",
+                    "secondary": "#8b5cf6",
+                    "secondary-content": "#ffffff",
+                    "accent": "#10b981",
+                    "accent-content": "#ffffff",
+                    "neutral": "#374151",
+                    "neutral-content": "#ffffff",
+                    "base-100": "#ffffff",
+                    "base-200": "#f5f5f5",
+                    "base-300": "#e5e5e5",
+                    "base-content": "#1f2937",
+                    "info": "#38bdf8",
+                    "success": "#34d399",
+                    "warning": "#fbbf24",
+                    "error": "#f87171",
+                },
+                dark: {
+                    "primary": "#38bdf8",
+                    "primary-content": "#ffffff",
+                    "secondary": "#a78bfa",
+                    "secondary-content": "#ffffff",
+                    "accent": "#34d399",
+                    "accent-content": "#ffffff",
+                    "neutral": "#9ca3af",
+                    "neutral-content": "#1f2937",
+                    "base-100": "#111827",
+                    "base-200": "#1f2937",
+                    "base-300": "#374151",
+                    "base-content": "#f3f4f6",
+                    "info": "#7dd3fc",
+                    "success": "#6ee7b7",
+                    "warning": "#fcd34d",
+                    "error": "#fca5a5",
+                },
+            },
+        ],
+        darkTheme: "dark",
+    },
 }

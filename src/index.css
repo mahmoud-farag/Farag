@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom base styles - Light Theme */
+/* Custom base styles */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply font-sans bg-white text-gray-800 antialiased overflow-x-hidden transition-colors duration-300;
+    @apply font-sans antialiased overflow-x-hidden transition-colors duration-300;
     line-height: 1.6;
-  }
-
-  /* Dark mode body */
-  .dark body {
-    @apply bg-gray-900 text-gray-100;
   }
 
   a {
@@ -23,54 +18,28 @@
   }
 }
 
-/* Custom component styles */
+/* Custom component styles that complement DaisyUI */
 @layer components {
   .glass-card {
-    @apply bg-white border border-gray-100 rounded-xl shadow-card transition-all duration-300 ease-out;
-  }
-
-  .dark .glass-card {
-    @apply bg-gray-800 border-gray-700;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    @apply bg-base-100 border border-base-300 rounded-xl shadow-card transition-all duration-300 ease-out;
   }
 
   .glass-card:hover {
-    @apply border-primary-200 -translate-y-1;
-    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.1);
-  }
-
-  .dark .glass-card:hover {
-    @apply border-primary-500;
-    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.2);
+    @apply -translate-y-1 border-primary/30;
+    box-shadow: 0 20px 50px rgba(14, 165, 233, 0.12);
   }
 
   .text-gradient {
     @apply bg-gradient-primary bg-clip-text text-transparent;
   }
 
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium rounded-full bg-gradient-primary text-white shadow-lg transition-all duration-300;
+  .btn-primary-gradient {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium rounded-full bg-gradient-primary text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5;
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.25);
   }
 
-  .btn-primary:hover {
-    @apply -translate-y-0.5;
-    box-shadow: 0 10px 40px rgba(14, 165, 233, 0.3);
-  }
-
-  .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium rounded-full bg-white text-gray-700 border-2 border-gray-200 transition-all duration-300;
-  }
-
-  .dark .btn-secondary {
-    @apply bg-gray-800 text-gray-200 border-gray-600;
-  }
-
-  .btn-secondary:hover {
-    @apply border-primary-400 text-primary-600 bg-primary-50;
-  }
-
-  .dark .btn-secondary:hover {
-    @apply border-primary-400 text-primary-400 bg-gray-700;
+  .btn-primary-gradient:hover {
+    box-shadow: 0 10px 40px rgba(14, 165, 233, 0.35);
   }
 
   .section-title {
@@ -103,7 +72,6 @@
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
