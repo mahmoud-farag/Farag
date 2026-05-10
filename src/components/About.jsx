@@ -25,17 +25,13 @@ function About() {
                             Full Stack Software Engineer
                         </h3>
                         <p className="text-base-content/70 text-lg mb-4 leading-relaxed">
-                            With 4 years of experience building, maintaining, and scaling production web applications.
-                            Strong background in the Node.js ecosystem (NestJS, Express, TypeScript),
-                            with solid experience in MongoDB, PostgresSQL, MySQL, and AWS services.
-                        </p>
-                        <p className="text-base-content/70 text-lg mb-4 leading-relaxed">
-                            I've worked extensively on real-world systems including payroll platforms,
-                            with hands-on experience using Angular and React to deliver complete features end-to-end.
+                            Full Stack Software Engineer with +4 years of experience building, maintaining, and scaling production web applications.
+                            Strong background in the Node.js ecosystem (NestJS, Express, TypeScript) with solid experience in MongoDB, PostGres,
+                            AWS services, and React.js/Angular.
                         </p>
                         <p className="text-base-content/70 text-lg mb-10 leading-relaxed">
-                            Currently open to Backend or Backend-leaning Full Stack roles where I can contribute
-                            to building reliable, scalable systems and continue growing as an engineer.
+                            I've worked extensively on real-world systems, including payroll platforms and microservices architecture,
+                            with a focus on performance, maintainability, reliability, and clean architecture.
                         </p>
 
                         {/* DaisyUI stats component */}
@@ -45,7 +41,7 @@ function About() {
                                 <div className="stat-title text-base-content/60">Years Experience</div>
                             </div>
                             <div className="stat place-items-center">
-                                <div className="stat-value text-gradient text-3xl">3</div>
+                                <div className="stat-value text-gradient text-3xl">4</div>
                                 <div className="stat-title text-base-content/60">Companies</div>
                             </div>
                             <div className="stat place-items-center">

@@ -46,10 +46,9 @@ function Hero() {
               className="text-base-content/70 text-lg md:text-xl mb-8 leading-relaxed animate-fade-in-up opacity-0"
               style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
             >
-              With 4 years of experience building, maintaining, and scaling production web applications.
-              Strong background in the Node.js ecosystem (NestJS, Express, TypeScript) with solid
-              experience in MongoDB, PostgresSQL, MySQL, and AWS services. Passionate about clean architecture
-              and maintainable systems.
+              Full Stack Software Engineer with +4 years of experience building, maintaining, and scaling production web applications.
+              Strong background in the Node.js ecosystem (NestJS, Express, TypeScript) with solid experience in MongoDB, PostGres,
+              AWS services, and React.js/Angular. Passionate about clean architecture, microservices, and maintainable systems.
             </p>
 
             <div
@@ -63,7 +62,7 @@ function Hero() {
                 </svg>
               </a>
               <a
-                href="https://drive.google.com/file/d/1Z5VhOZB34NXTKS9HL0hFqJ2_DhDeA1wp/view?usp=sharing"
+                href="https://drive.google.com/file/d/1QWI3T0KK054QX60f44Bg1prqQb8R5YDx/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline btn-primary rounded-full"

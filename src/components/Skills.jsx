@@ -1,15 +1,23 @@
 const skills = [
     { name: 'Node.js', category: 'Backend', level: 95 },
+    { name: 'NestJS', category: 'Backend', level: 90 },
     { name: 'Express.js', category: 'Backend', level: 95 },
-    { name: 'NestJS', category: 'Backend', level: 85 },
     { name: 'RESTful APIs', category: 'Backend', level: 95 },
+    { name: 'GraphQL', category: 'Backend', level: 75 },
+    { name: 'Microservices', category: 'Backend', level: 80 },
     { name: 'MongoDB', category: 'Database', level: 95 },
     { name: 'MySQL', category: 'Database', level: 80 },
-    { name: 'PostgreSQL', category: 'Database', level: 70 },
+    { name: 'PostgreSQL', category: 'Database', level: 75 },
+    { name: 'Mongoose', category: 'Database', level: 90 },
+    { name: 'Prisma', category: 'Database', level: 80 },
+    { name: 'TypeORM', category: 'Database', level: 75 },
     { name: 'Angular', category: 'Frontend', level: 80 },
     { name: 'React.js', category: 'Frontend', level: 85 },
     { name: 'TypeScript', category: 'Language', level: 90 },
-    { name: 'AWS', category: 'Cloud', level: 70 },
+    { name: 'JavaScript', category: 'Language', level: 95 },
+    { name: 'AWS', category: 'Cloud', level: 75 },
+    { name: 'Docker', category: 'DevOps', level: 75 },
+    { name: 'Kubernetes', category: 'DevOps', level: 65 },
 ];
 
 const categoryColors = {
@@ -18,13 +26,15 @@ const categoryColors = {
     Frontend: 'badge-accent',
     Language: 'badge-warning',
     Cloud: 'badge-info',
+    DevOps: 'badge-success',
 };
 
 const extraSkills = [
-    'Mongoose', 'Prisma', 'Sequelize', 'Lambda', 'S3', 'SQS', 'Fargate',
-    'CloudWatch', 'AWS CDK', 'Docker', 'Kubernetes', 'Jenkins', 'Git',
-    'GitHub Actions', 'Tailwind CSS', 'Bootstrap', 'Agile', 'Scrum',
-    'TDD', 'CI/CD', 'Microservices', 'Performance Optimisation',
+    'Lambda', 'S3', 'SQS', 'Fargate', 'CloudWatch', 'AWS CDK (IaC)',
+    'Jenkins', 'Git', 'GitLab', 'GitHub Actions', 'CI/CD Pipelines',
+    'Tailwind CSS', 'Bootstrap', 'StyledComponents',
+    'Agile/Scrum', 'Camunda PBM', 'Spring Boot (basics)', 'Java (basics)',
+    'Codex', 'Antigravity', 'Claude-code (Ollama)',
 ];
 
 function Skills() {
