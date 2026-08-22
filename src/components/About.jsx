@@ -25,13 +25,11 @@ function About() {
                             Full Stack Software Engineer
                         </h3>
                         <p className="text-base-content/70 text-lg mb-4 leading-relaxed">
-                            Full Stack Software Engineer with +4 years of experience building, maintaining, and scaling production web applications.
-                            Strong background in the Node.js ecosystem (NestJS, Express, TypeScript) with solid experience in MongoDB, PostGres,
-                            AWS services, and React.js/Angular.
-                        </p>
-                        <p className="text-base-content/70 text-lg mb-10 leading-relaxed">
-                            I've worked extensively on real-world systems, including payroll platforms and microservices architecture,
-                            with a focus on performance, maintainability, reliability, and clean architecture.
+                            Full Stack Software Engineer with 5 years building and scaling production web apps.
+
+                            Deep in the Node.js ecosystem (NestJS, Express, TS), working across SQL and NoSQL databases, AWS, and Camunda BPM. I've spent a lot of that time on payroll platforms, focused on performance, scalability, and clean architecture.
+
+                            Also comfortable with .NET Core and Spring Boot, and deliver end-to-end features with Angular or React when needed.
                         </p>
 
                         {/* DaisyUI stats component */}

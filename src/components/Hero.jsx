@@ -46,9 +46,11 @@ function Hero() {
               className="text-base-content/70 text-lg md:text-xl mb-8 leading-relaxed animate-fade-in-up opacity-0"
               style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
             >
-              Full Stack Software Engineer with +4 years of experience building, maintaining, and scaling production web applications.
-              Strong background in the Node.js ecosystem (NestJS, Express, TypeScript) with solid experience in MongoDB, PostGres,
-              AWS services, and React.js/Angular. Passionate about clean architecture, microservices, and maintainable systems.
+              Full Stack Software Engineer with 5 years building and scaling production web apps.
+
+              Deep in the Node.js ecosystem (NestJS, Express, TS), working across SQL and NoSQL databases, AWS, and Camunda BPM. I've spent a lot of that time on payroll platforms, focused on performance, scalability, and clean architecture.
+
+              Also comfortable with .NET Core and Spring Boot, and deliver end-to-end features with Angular or React when needed.
             </p>
 
             <div
